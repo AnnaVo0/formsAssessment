@@ -5,7 +5,7 @@ const ul = document.querySelector("ul");
 let toDoList = [];
 
 // adds a todo to todo list on form submission
-document.querySelector("form").addEventListener("submit", function(event) {
+document.querySelector("#addTodo").addEventListener("submit", function(event) {
     event.preventDefault();
     let toDo = document.querySelector("#toDo").value;
     toDoList.push(toDo);
